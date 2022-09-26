@@ -1,0 +1,625 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+@media screen and (max-width: 480px){
+    .nav{
+        display:grid;
+    }
+    .prd .prd_container{
+        display: grid;
+    }
+    .main{
+        height:700px;
+    }
+    .main .main_content{
+        padding-top: 15px;
+        height:700px;
+    }
+    .main .main_content h2{
+    padding-top: 35px;
+    font-size: 20px;
+    }
+    .main .main_content h2 span{
+        font-size: 10px;
+        padding:0px;
+    }
+    .prd .prd_container .item{
+        width:100%;
+        height: auto;
+        margin: 10px;
+    }
+    .prd .prd_container .item .item_content a{
+        font-size: 10px;
+    }
+    .key .key_container{
+        display:grid;
+        
+    }
+}
+.nav{
+    background-color: rgb(151, 146, 146);
+    z-index:9;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display:flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.50);
+}
+.nav_top{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+
+}
+.logo{
+    float:left;
+    width: 50%;
+    
+}
+.logo img{
+    padding:10px
+}
+.nav_side{
+    float: right;
+    width:50%;
+    margin-top: 30px;
+    text-align: right;
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right: 20px;
+   
+    color:black;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.nav_side a:hover{
+    color:orange;
+    transition: all 1s ease;
+
+}
+.main{
+    background-color: rgba(241, 133, 32, 0.99);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+}
+.main .main_content{
+    padding-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.main .main_content h2{
+    color:rgb(29, 2, 29);
+    font-size: 40px;
+    font-family: cosmic, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.main .main_content h2 span{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: cosmic, sans-serif;
+    opacity: 0.80;
+}
+.main .main_content .btn{
+    margin-top: 20px;
+    text-align: center;
+}
+.main .main_content .btn a{
+    text-decoration: none;
+    padding: 10px 50px;
+    margin:10px;
+    background-color: rgb(29, 2, 29);
+    color: white;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    border: 3px solid orangered;
+    border-radius: 20px;
+
+}
+.main .main_content .btn a:hover{
+    color: orangered;
+    font-weight: bolder;
+    transition: 0.6s;
+    background-color: peachpuff;
+    border: 3px solid purple;
+}
+.prd h2{
+    color:black;
+    font-size: 30px;
+    padding:20px;
+    text-align: center;
+}
+.prd .prd_container{
+    display:flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.prd .prd_container .item{
+    width:33.3%;
+    height: auto;
+    margin: 10px;
+}
+.prd .prd_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgb(34, 1, 43);
+}
+
+.prd .prd_container .item .item_img{
+    width: 100%;
+    height:450px;
+    overflow: hidden; 
+}
+.prd .prd_container .item .item_img img{
+    width: 100%;
+    height:450px;
+    
+}
+
+.prd{
+    padding-bottom: 5%;
+}
+.prd .prd_container .item .item_content{
+    text-align: center;
+}
+.prd .prd_container .item .item_content h2{
+    padding: 10px;
+    font-size: 25px;
+    font-family: cosmic, sans-serif;
+}
+.prd .prd_container .item .item_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+.prd .prd_container .item .item_content a{
+    text-decoration: none;
+    padding: 10px 50px;
+    margin:10px;
+    background-color: rgb(29, 2, 29);
+    color: white;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    border: 3px solid orangered;
+    border-radius: 20px;
+
+}
+.prd .prd_container .item .item_content a:hover{
+    color: orangered;
+    font-weight: bolder;
+    transition: 0.6s;
+    background-color: peachpuff;
+    border: 3px solid purple;
+
+}
+.prd .prd_btn{
+    text-align: center;
+    margin-top: 40px;
+}
+.prd .prd_btn a{
+    text-decoration: none;
+    padding: 10px 50px;
+    margin:10px;
+    background-color: rgb(29, 2, 29);
+    color: white;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    border: 3px solid orangered;
+    border-radius: 20px;
+
+}
+.prd .prd_btn a:hover{
+    color: orangered;
+    font-weight: bolder;
+    transition: 0.6s;
+    background-color: peachpuff;
+    border: 3px solid purple;
+
+}
+.key{
+    padding:50px;
+}
+.key h2{
+    color:black;
+    font-size: 30px;
+    padding:20px;
+    text-align: center;
+}
+.key .key_container{
+    display:flex;
+    
+}
+.key .key_container .key_content{
+    padding:20px;
+    width:40%;
+    float: left;
+}
+.key .key_container .key_content li{
+    margin:10px;
+    list-style: none;
+    padding: 10px;
+    border-left: 3px solid rgb(46, 9, 46);
+    color:rgba(0,0,0,0.90);
+    text-align: left;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 50px 0px rgba(21, 12, 63, 0.40);
+}
+.key .key_container .key_img{
+    width: 40%;
+    padding: 10px;
+    float: right;
+    margin-left: 10px;
+}
+.key .key_container .key_img img{
+    width: 100%;
+    margin-top: 25px;
+    
+}
+.client{
+    padding:50px;
+}
+.client h2{
+    color:black;
+    font-size: 30px;
+    padding:10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.client .client_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+.client .client_container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+}
+.client .client_container .item{
+    width:100%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: none;
+}
+.client .client_container .item .item_img{
+    width: 100%;
+    height:250px;
+    text-align: center;
+    overflow: hidden; 
+}
+.client .client_container .item .item_img img{
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+    
+    
+}
+.client .client_container .item .item_content{
+    text-align: center;
+}
+.client .client_container .item .item_content h2{
+    padding: 10px;
+    font-size: 25px;
+    font-family: cosmic, sans-serif;
+}
+.client .client_container .item .item_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+footer{
+    background-color: rgb(102, 101, 104);
+    padding:50px;
+}
+footer .pages{
+    text-align: center;
+
+}
+footer .pages h3{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin:10px ;
+    color:orange;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+footer .pages a:hover{
+    color:rgb(16, 3, 46)
+}
+footer .docs{
+    text-align: center;
+
+}
+footer .docs h3{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+footer .docs a{
+    text-decoration: none;
+    margin:10px ;
+    color:orange;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+footer .docs a:hover{
+    color:rgb(16, 3, 46)
+}
+footer .social{
+    text-align: center;
+
+
+}
+footer .social h3{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+footer .social a{
+    font-size: 30px;
+    color:orange;
+    margin: 10px;
+}
+footer .social a:hover{
+    font-size: 30px;
+    color:rgb(26, 5, 49);
+    margin: 10px;
+}
+footer .contact{
+    text-align: center;
+
+}
+footer .contact h3{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+footer .contact a{
+    font-size: 30px;
+    color:orange;
+    margin: 10px;
+}
+footer .contact a:hover{
+    font-size: 30px;
+    color:rgb(26, 5, 49);
+    margin: 10px;
+}
+.team{
+    padding:50px;
+}
+.team h2{
+    color:black;
+    font-size: 30px;
+    padding:20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.team .team_container{
+    display:flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.team .team_container .team_video{
+    width:45%;
+    padding:20px;
+}
+.team .team_container .team_video iframe{
+    width:100%;
+    border: 5px solid rgb(22, 4, 63);
+    outline: none;
+}
+.team .team_container .team_content{
+    width:50%;
+    padding:20px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.team .team_container .team_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+.feedback{
+    background-color: rgba(241, 159, 6, 0.904);
+
+
+}
+.feedback h2{
+    color:black;
+    font-size: 30px;
+    padding:20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.feedback .feed_form{
+    text-align: center;
+}
+.feedback .feed_form form{
+    padding: 20px;
+}
+.feedback .feed_form form input{
+    width:40%;
+    margin:10px;
+    padding: 5px;
+    border:none;
+    box-shadow: 0px 3px 50px orangered;
+}
+.feedback .feed_form form textarea{
+    width:40%;
+    margin:10px;
+    padding: 5px;
+    border:none;
+    box-shadow: 0px 3px 50px orangered;
+}
+.feedback .feed_form form button{
+    width:10%;
+    margin:10px;
+    padding: 5px;
+    border:3px solid black;
+    box-shadow: 0px 3px 50px orangered;
+    background-color: rgb(45, 0, 128);
+    color:white;
+}
+.feedback .feed_form form button:hover{
+    width:10%;
+    margin:10px;
+    padding: 5px;
+    border:3px solid black;
+    box-shadow: 0px 3px 50px orangered;
+    background-color:white;
+    color:black;
+    font-weight: bolder;
+}
+.about{
+    padding:80px;
+}
+.about h2{
+    color:rgb(14, 5, 54);
+    font-size: 30px;
+    padding:10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.about p{
+    padding: 5px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+}
+.contact_container{
+    padding:100px;
+}
+.contact_container h2{
+    color:rgb(14, 5, 54);
+    font-size: 30px;
+    padding:10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.contact_container .map{
+    border: 10px solid orange;
+}
+.contact_container .contact_content{
+    padding:20px;
+}
+.contact_container .contact_content p{
+    padding: 5px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+}
+
+
+
+.login-form {
+    width: 340px;
+    margin: 50px auto;
+    padding-top: 100px;
+    width:50%;
+    text-align: center;
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.register_form{
+    background-color: chocolate;
+    width:50%;
+    margin-left: 25%;
+    padding:30px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.register_form h4{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.register_form form{
+    padding: 20px;
+}
+.register_form form input{
+    width:40%;
+    margin:10px;
+    padding: 5px;
+    border:3px, black;
+    
+}
+
+.register_form form button{
+    width:20%;
+    margin:10px;
+    padding: 5px;
+    border:3px solid black;
+    box-shadow: 0px 3px 50px orangered;
+    background-color: rgb(45, 0, 128);
+    color:white;
+}
+.register_form form button:hover{
+    width:20%;
+    margin:10px;
+    padding: 5px;
+    border:3px solid black;
+    box-shadow: 0px 3px 50px orangered;
+    background-color:white;
+    color:black;
+    font-weight: bolder;
+}
+
+.blog{
+    padding:80px;
+}
+.blog h2{
+    color:rgb(14, 5, 54);
+    font-size: 25px;
+    padding:10px;
+    text-align: left;
+    
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.blog p{
+    padding: 5px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+    text-align: left;
+}
